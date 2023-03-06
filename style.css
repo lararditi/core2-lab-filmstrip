@@ -64,13 +64,6 @@ html{
     height: 50vh;
 }
 
-.one{
-    background-color: blue;
-    overflow: auto;
-    height: 50 vh;
-}
-
-.two{
-    background-color: red;
-    overflow: auto;
+img{
+    display: inline-block;
 }
