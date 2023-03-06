@@ -31,12 +31,14 @@ html{
     width: 100%;
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
 }
 
 .grid-item{
     grid-column: span 2;
-    overflow: auto;padding: 20px;
+    
+    overflow: auto;
+    padding: 20px;
 }
 
 .scene-before{
