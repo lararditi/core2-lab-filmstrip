@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    font-size: 1.6rem; 
+
+    }
+    
+    @font-face {
+    font-family: "Neue Haas Black";
+    src: url('./fonts/neue-haas/NHaasGroteskDSPro-95Blk.woff') format('woff'),
+         url('./fonts/neue-haas/NHaasGroteskDSPro-95Blk.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    }
+
+html{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-container{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-item{
+    grid-column: span 2;
+    overflow: auto;padding: 20px;
+}
+
+.scene-before{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: blue;
+}
+
+.scene-after{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: red;
+}
+
+.scene-after,
+.scene-before{
+    height: 20rem;
+}
+
+.height{
+    height: 50vh;
+}
+
+.one{
+    background-color: blue;
+    overflow: auto;
+    height: 50 vh;
+}
+
+.two{
+    background-color: red;
+    overflow: auto;
+}
