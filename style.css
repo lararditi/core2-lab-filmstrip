@@ -31,19 +31,20 @@ html{
     width: 100%;
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid-item{
     grid-column: span 2;
-    
     overflow: auto;
     padding: 20px;
 }
 
-.scene-before{
+.scene-before {
     padding: 20px;
     display: grid;
+    background-image: url("scene.png");
+    background-size: cover;
     grid-template-rows: 1fr 1fr;
     background-color: blue;
 }
@@ -57,13 +58,14 @@ html{
 
 .scene-after,
 .scene-before{
-    height: 20rem;
+    height: 30vh;
 }
 
 .height{
-    height: 50vh;
+    height: 60vh;
 }
 
 img{
+
     display: inline-block;
 }
